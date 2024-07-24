@@ -1,0 +1,40 @@
+/* #sidebar{ 
+
+  background-color: red ;
+} */
+
+
+.card-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+
+
+}
+
+.nav-link { 
+  color: hotpink;
+  opacity: 50%;
+  margin-bottom: 10px;
+}
+
+
+.nav-item :hover {
+  border: 10px hotpink;
+  border-radius: 20px;
+  background-color: pink;
+  
+}
+
+.card {
+  background-color: none;
+  border:1px solid transparent;
+  font: black;
+}
+
+.card :hover {
+  background-color: pink;
+  border-color: blue;
+  border: 20px;
+  font: hotpink;
+}

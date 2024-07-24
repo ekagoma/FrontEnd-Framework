@@ -1,0 +1,19 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "banana": "lite-server --baseDir=\"public\"",
+    "Eemaiscool": "sass --watch sass:public/assets/css",
+    "start": "concurrently \"npm run Eemaiscool\" \"npm run banana\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "lite-server": "^2.6.1",
+    "sass": "^1.77.8"
+  }
+}
