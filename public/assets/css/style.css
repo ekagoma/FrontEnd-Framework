@@ -1,40 +1,153 @@
-/* #sidebar{ 
-
-  background-color: red ;
-} */
-
-
-.card-text {
-  font-size: 24px;
-  font-weight: bold;
-  color: black;
-
-
+body {
+  font-family: "Mulish", sans-serif;
 }
 
-.nav-link { 
-  color: hotpink;
-  opacity: 50%;
-  margin-bottom: 10px;
+.sidebar {
+  height: 100vh;
+  padding-top: rem;
+  height: 100vh;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
 }
 
+#caughtactive {
+  background-color: #9FA2B4;
+}
 
-.nav-item :hover {
-  border: 10px hotpink;
-  border-radius: 20px;
-  background-color: pink;
-  
+#overview {
+  font-weight: bolder;
+  background-color: rgba(159, 162, 180, 0.1137254902);
+}
+
+main {
+  align-items: center;
+  max-width: 30%;
+  padding-bottom: 20px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.profile {
+  width: 32px;
+}
+
+.nav-link {
+  padding: 10px;
+  font-size: 1.1rem;
+  color: #a8a9b1;
+}
+.nav-link:hover {
+  color: #ebebf3;
+  background-color: rgba(159, 162, 180, 0.08);
+}
+.nav-link .active {
+  background-color: #4c5157;
+  border-radius: 5px;
+}
+
+.details {
+  color: #9FA2B4;
+}
+
+.asidebody {
+  color: #252733 !important;
+  font-weight: bold !important;
+}
+
+.asidetitle {
+  font-size: 16px !important;
+  font-weight: normal !important;
+}
+
+.subheadLG {
+  font: #9FA2B4 !important;
 }
 
 .card {
-  background-color: none;
-  border:1px solid transparent;
-  font: black;
+  border-radius: 10px;
+  border: 1px solid #DFE0EB;
+  color: black;
+  font-weight: bold;
+}
+.card:hover {
+  color: #3751FF;
+  border: 2px solid #3751FF;
 }
 
-.card :hover {
-  background-color: pink;
-  border-color: blue;
-  border: 20px;
-  font: hotpink;
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #9FA2B4;
 }
+
+.numbers {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1.5rem;
+  color: #a3a6b8;
+  font-weight: normal;
+}
+
+.support {
+  font-size: 0.75rem;
+}
+
+#newidea {
+  font-size: 14px;
+  color: #C5C7CD;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  padding-left: 2rem;
+  width: 100%;
+}
+
+.form-check-input {
+  padding: 10rem;
+  margin: -1.5rem;
+}
+
+.badge {
+  font-size: 0.9rem;
+}
+
+.card-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: rgba(248, 249, 250, 0.9529411765);
+}
+
+#bottomcards {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.sticker {
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.trendchart {
+  border-radius: 10px;
+}
+
+/* For Samsung Galaxy A51/71 (Mobile) and smaller  */
+@media (max-width: 412px) {
+  .sidebar {
+    position: inherit;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

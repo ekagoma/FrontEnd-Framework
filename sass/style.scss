@@ -1,0 +1,169 @@
+// Variables 
+
+$border-color: #DFE0EB;
+$hover-color: #3751FF ;
+$subhead-color: #9FA2B4;
+
+// Mixins
+@mixin numbers-base{
+    color: black;
+    font-weight:bold;
+
+    &:hover { 
+        color: $hover-color;
+        border: 2px solid $hover-color;
+    }
+}
+
+
+body {
+    font-family: "Mulish", sans-serif ;
+}
+  
+.sidebar {
+    height: 100vh;
+    padding-top: rem;
+    height: 100vh;
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+#caughtactive{
+    background-color:#9FA2B4;
+}
+  
+#overview{ 
+    font-weight: bolder;
+    background-color:#9fa2b41d;
+}
+
+main {
+    align-items: center;
+    max-width: 30%;
+    padding-bottom: 20px;
+}
+
+h5{ 
+    font-size: 16px;
+    font-weight: normal;
+}
+.profile{
+    width: 32px;
+}
+
+// Nesting
+.nav-link {
+    padding: 10px;
+    font-size: 1.1rem;
+    color: #a8a9b1;
+
+    &:hover{
+        color: #ebebf3;
+        background-color: rgba(159, 162, 180, 0.08);
+        }
+
+    .active{
+        background-color: #4c5157;
+        border-radius: 5px;
+        }
+}
+
+.details { 
+    color: $subhead-color;
+}
+.asidebody{ 
+    color: #252733 !important;
+    font-weight: bold !important;
+}
+
+//   Use important to override settings
+.asidetitle{ 
+    font-size: 16px !important;
+    font-weight: normal !important;
+}
+
+.subheadLG{ 
+    font: $subhead-color !important;
+}
+
+
+.card {
+    border-radius: 10px;
+    border: 1px solid $border-color;
+    @include numbers-base;
+
+}
+
+
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $subhead-color;
+}
+
+
+.numbers {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.5rem;
+    color: #a3a6b8;
+    font-weight: normal;
+}
+
+
+.support {
+    font-size: 0.75rem;
+}
+
+#newidea {
+    font-size: 14px;
+    color: #C5C7CD;
+}
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding-left:2rem;
+    width: 100%;
+}
+
+.form-check-input{
+    padding: 10rem;
+    margin: -1.5rem;
+}
+.badge {
+    font-size: 0.9rem;
+}
+
+.card-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #f8f9faf3;
+}
+
+#bottomcards {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.sticker{ 
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: normal;
+}
+.trendchart { 
+    border-radius: 10px;
+    }
+
+/* For Samsung Galaxy A51/71 (Mobile) and smaller  */
+@media (max-width: 412px) {
+    .sidebar {
+        position: inherit;
+    }
+}
